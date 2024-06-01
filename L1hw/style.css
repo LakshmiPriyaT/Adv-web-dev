@@ -1,0 +1,94 @@
+
+:root{
+    /*bg colors */
+    --color-Mob: #b887d4;
+--color-Tab:  #fff1e6;
+--color-Laptop: #52b788;
+--color-Desktop: #bee1e6;
+
+/*Mobile  -> 576px
+Tablet  -> 768px
+Laptop  -> 992px
+Desktop -> 1200px */
+
+}
+
+
+*{
+    margin : 0px;
+    padding : 0px;
+    box-sizing : border-box; 
+    text-align: center;
+      }
+  
+    body{
+      font-size : 35px;
+      font-family : sans-serif;
+      
+    }
+  
+    .container{
+        display : grid;
+        place-items : center;
+      
+        background-color: white ;
+        background-image: url("https://rukminim1.flixcart.com/image/850/1000/kavefm80/poster/w/x/z/medium-the-marvel-avengers-wall-poster-for-room-with-gloss-original-imafsckr6vt3wjjv.jpeg?q=90");
+        height : 100vh;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+       
+  }
+  
+  .text{
+    font-size: 1.5rem;
+   }
+
+
+  #size {
+    position: absolute;
+  
+    /* positioning screen size below our main text */
+    top : 60%;
+    left: 50%;
+  
+    transform: translateX(-50%);
+  
+    color : red;
+    font-size : 35px;
+  }
+
+  @media screen and (min-width : 576px){
+    .container{
+      background-color: var(--color-Mob);
+      background-size:  cover;
+    
+    }
+   
+  }
+    @media screen and (min-width : 768px){
+        .container{
+          background-color: var(--color-Tab);
+          background-size: cover;
+    
+        }
+       
+    }
+        @media screen and (min-width : 992px){
+            .container{
+              background-color: var(--color-Laptop);
+              background-size: cover;
+
+            }
+          
+        }
+
+            @media screen and (min-width : 1200px){
+                .container{
+                  background-color: var(--color-Desktop);
+                  background-size: cover;
+    
+                }
+             
+}
+
+

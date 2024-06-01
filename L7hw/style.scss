@@ -1,0 +1,63 @@
+// styles.scss
+
+// Variables
+$primary-color: #d35400;
+$secondary-color: #f39c12;
+$background-color: #ecf0f1;
+
+// Styles
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: $background-color;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: $primary-color;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: $secondary-color;
+  padding: 10px;
+
+  a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+  }
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.menu-item {
+  background-color: white;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+
+  h2 {
+    color: $primary-color;
+  }
+
+  p {
+    color: #333;
+  }
+}
+
+.footer {
+  background-color: $primary-color;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
